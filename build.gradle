@@ -1,0 +1,34 @@
+repositories {
+        mavenCentral()
+    }
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceSets {
+    intTest {
+        java.srcDir file('src/intTest/java')
+        resources.srcDir file('src/intTest/java')
+    }
+}
+
+dependencies {
+    intTestImplementation 'junit:junit:4.12'
+    intTestImplementation 'com.intuit.karate:karate-junit4:0.7.0'
+    intTestImplementation 'com.intuit.karate:karate-apache:0.7.0'
+    intTestImplementation 'net.masterthought:cucumber-reporting:3.8.0'
+}
+
+task integrationTest(type: Test) {
+    description = "Runs Karate Integration Tests"
+    // Pull cucumber options into the cucumber JVM
+    systemProperty "cucumber.options", System.properties.getProperty("cucumber.options")
+    // Pull karate options into the JVM
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    // get base.URL option into the JVM
+    systemProperty "base.URL", System.properties.getProperty("base.URL")
+    // Ensure tests are always run
+    outputs.upToDateWhen { false }
+    testClassesDirs = sourceSets.intTest.output.classesDirs
+    classpath = sourceSets.intTest.runtimeClasspath
+}

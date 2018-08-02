@@ -1,0 +1,14 @@
+*.sw?
+.#*
+*#
+*~
+bin
+build
+target
+.gradle
+*.iml
+.idea
+*.ipr
+*.iws
+out
+

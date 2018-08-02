@@ -1,0 +1,9 @@
+{
+  "talks": [
+    {
+      "id": 1,
+      "title": "Rest API Testing",
+      "speaker": "Erol Selitektay"
+    }
+  ]
+}
