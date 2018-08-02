@@ -4,7 +4,7 @@ Basically, Karate is an API testing framework that allows you to write your test
 ## How to run the tests
 First you need an REST API to run the tests against it.
 
-[JSON Server](https://github.com/typicode/json-server) is a fake REST API that is used in this project.
+[JSON Server](https://github.com/typicode/json-server) is a fake REST API that is used in this demo.
 
 Install JSON Server:
 
