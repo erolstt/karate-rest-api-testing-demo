@@ -20,6 +20,9 @@ Running integration test
 
 `./gradlew integrationTest -Dbase.URL=http://localhost:3000/`
 
+## Reports
+After test run, you can find the cucumber reports under target folder
+
 ## Folder Structure
 
 ```
