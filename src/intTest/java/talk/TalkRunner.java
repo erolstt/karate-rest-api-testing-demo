@@ -1,4 +1,4 @@
-package rest;
+package talk;
 
 import cucumber.api.CucumberOptions;
 import com.intuit.karate.cucumber.CucumberRunner;
@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
  * Class to run cucumber feature files.
  */
 @CucumberOptions(tags = {"~@ignore"})
-public class RestRunner {
+public class TalkRunner {
 
     @Test
     public void test() {

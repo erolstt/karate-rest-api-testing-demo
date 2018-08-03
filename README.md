@@ -30,7 +30,7 @@ After the tests run, the cucumber reports will be generated under `target` direc
 │   └── java
 │       ├── karate-config.js
 │       ├── logback-test.xml
-│       └── rest
+│       └── talk
 │           ├── RestRunner.java
 │           ├── talks-post-data.json
 │           ├── talks-update-data.json
