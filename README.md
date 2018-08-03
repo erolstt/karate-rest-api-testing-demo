@@ -21,7 +21,7 @@ Running integration test
 `./gradlew integrationTest -Dbase.URL=http://localhost:3000/`
 
 ## Reports
-After the tests run, the cucumber reports will be created under`target` directory
+After the tests run, the cucumber reports will be generated under `target` directory
 
 ## Folder Structure
 
