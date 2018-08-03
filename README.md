@@ -14,7 +14,15 @@ Start JSON Server in the root directory of this project
 
 `json-server --watch db.json`
 
-Now you have an up and running REST API. 
+After running json-server, you can go to http://localhost:3000/talks and you will get
+
+```
+{
+    id: 1,
+    title: "Rest API Testing",
+    speaker: "Erol Selitektay"
+}
+```
 
 Running integration test
 
@@ -41,3 +49,7 @@ After the tests run, the cucumber reports will be generated under `target` direc
     └── java
 
 ```
+
+## OAuth 2 Example
+
+You can checkout `auth` branch to see how you can make calls to OAuth 2 authorization enabled HTTP services using Karate framework.
