@@ -31,4 +31,10 @@ task integrationTest(type: Test) {
     outputs.upToDateWhen { false }
     testClassesDirs = sourceSets.intTest.output.classesDirs
     classpath = sourceSets.intTest.runtimeClasspath
+    // Auth0 options
+    systemProperty "grant.type", System.properties.getProperty("grant.type")
+    systemProperty "client.id", System.properties.getProperty("client.id")
+    systemProperty "client.secret", System.properties.getProperty("client.secret")
+    systemProperty "audience", System.properties.getProperty("audience")
+    systemProperty "auth.URL", System.properties.getProperty("auth.URL")
 }
