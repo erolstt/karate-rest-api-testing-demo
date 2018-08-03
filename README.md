@@ -18,7 +18,15 @@ Now you have an up and running REST API.
 
 Running integration test
 
-`./gradlew integrationTest -Dbase.URL=http://localhost:3000/ -Dgrant.type=client_credentials -Dclient.id=clint-id -Dclient.secret=client-secret -Daudience=https://audience-url -Dauth.URL=https://oauth-url`
+```
+./gradlew integrationTest \
+          -Dbase.URL=http://localhost:3000/ \
+          -Dgrant.type=client_credentials \
+          -Dclient.id=clint-id \
+          -Dclient.secret=client-secret \
+          -Daudience=https://audience-url \
+          -Dauth.URL=https://oauth-url
+```
 
 ## Reports
 After the tests run, the cucumber reports will be generated under `target` directory
